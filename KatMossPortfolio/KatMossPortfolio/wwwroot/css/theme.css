@@ -1,0 +1,90 @@
+﻿/* ========================================= */
+/*                THEME SYSTEM               */
+/* ========================================= */
+
+/* ---------- LIGHT MODE ---------- */
+body.light {
+    /* Global */
+    --color-bg: #feecf5;
+    --color-text: #27020e;
+    /* Header */
+    --color-nav-bg: #f4b6d9;
+    --color-nav-text: #27020e;
+    /* Hero */
+    --color-hero-bg: #ffadcb;
+    --color-hero-overlay-bg: rgba(255, 182, 193, 0.35); /* pale pink */
+    --color-hero-overlay-border: rgba(255, 182, 193, 0.4);
+    /* Carousel */
+    --color-carousel-bg: #feecf5;
+    /* Buttons */
+    --color-button-bg: #ccb3db;
+    --color-button-text: #27020e;
+    /* Theme switch */
+    --color-switch-track-bg: #ffadcb;
+    --color-switch-track-border: #ffadcb;
+    --color-switch-thumb-bg: #feecf5;
+    --hero-image: url('/images/hero.png');
+    --nav-link-color: #27020e; 
+    --nav-link-hover: #feecf5;
+}
+
+/* ---------- DARK MODE ---------- */
+body.dark {
+    /* Global */
+    --color-bg: #13010a;
+    --color-text: #fdd8e4;
+    /* Header */
+    --color-nav-bg: #470b2d;
+    --color-nav-text: #fdd8e4;
+    /* Hero */
+    --color-hero-bg: #52001e;
+    --color-hero-overlay-bg: rgba(120, 90, 100, 0.45); /* darker grey‑pink */
+    --color-hero-overlay-border: rgba(120, 90, 100, 0.55);
+    /* Carousel */
+    --color-carousel-bg: #13010a;
+    /* Buttons */
+    --color-button-bg: #3d244c;
+    --color-button-text: #fdd8e4;
+    /* Theme switch */
+    --color-switch-track-bg: #52001e;
+    --color-switch-track-border: #52001e;
+    --color-switch-thumb-bg: #13010a;
+    --hero-image: url('/images/hero.png');
+    --nav-link-hover: #ffadcb;
+    --nav-link-color: #feecf5;
+}
+
+/* ---------- GLOBAL APPLY ---------- */
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.top-nav {
+    background: var(--color-nav-bg);
+    color: var(--color-nav-text);
+}
+
+.hero {
+    background: var(--color-hero-bg);
+}
+
+.carousel-container {
+    background: var(--color-carousel-bg);
+}
+
+.view-btn {
+    background: var(--color-button-bg);
+    color: var(--color-button-text);
+}
+
+/* Theme switch colours */
+.switch-track {
+    background: var(--color-switch-track-bg);
+    border-color: var(--color-switch-track-border);
+}
+
+.switch-thumb {
+    background: var(--color-switch-thumb-bg);
+}
