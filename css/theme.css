@@ -57,7 +57,7 @@ body {
 }
 
 .hero {
-    background: var(--color-hero-bg);
+    background-color: var(--color-hero-bg);
 }
 
 .carousel-container {
