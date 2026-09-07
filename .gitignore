@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/KatMossPortfolio/.vs/KatMossPortfolio.slnx/FileContentIndex
+/KatMossPortfolio/KatMossPortfolio/obj/Debug/net10.0
+/KatMossPortfolio/KatMossPortfolio/obj
