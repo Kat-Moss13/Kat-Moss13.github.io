@@ -3,24 +3,97 @@
 <head>
     <meta charset="utf-8" />
     <title>Project One - Kat Moss</title>
-    <link rel="stylesheet" href="/css/site.css" />
+
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+
+    <script src="../js/theme-toggle.js" defer></script>
 </head>
 
 <body class="light">
 
     <header class="top-nav">
         <div class="brand">Kat Moss</div>
+
         <nav class="nav-right">
-            <a href="/projects/index.html">Projects</a>
-            <a href="/about.html">About</a>
-            <a href="/resume.html">Resume</a>
-            <a href="/contact.html">Contact</a>
+            <a href="../index.html">Home</a>
+            <a href="../projects/index.html">Projects</a>
+            <a href="../about.html">About</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../contact.html">Contact</a>
         </nav>
+
+        <button id="themeToggle" class="theme-switch">
+            <div class="switch-track">
+                <div class="switch-thumb">
+                    <img src="../images/sun.png" class="icon-sun" alt="Light mode" />
+                    <img src="../images/moon.png" class="icon-moon" alt="Dark mode" />
+                </div>
+            </div>
+        </button>
     </header>
 
-    <main>
-        <h1>Project One</h1>
-        <p>Details about the project...</p>
+    <main class="project-wrapper">
+
+        <!-- ⭐ VIDEO + TITLE -->
+        <section class="project-video-section">
+            <div class="project-video-box">
+                <iframe src="https://www.youtube.com/embed/da6-oookiA8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <h1 class="project-title">Project One</h1>
+        </section>
+
+        <!-- ⭐ MAIN IMAGE + DETAILS -->
+        <section class="project-main-section">
+
+            <!-- LEFT: Main image -->
+            <div class="project-main-image">
+                <img src="../images/project1-main.png" alt="Project Main Image">
+            </div>
+
+            <!-- RIGHT: Details -->
+            <div class="project-details">
+                <p><strong>Role:</strong> Gameplay Programmer</p>
+                <p><strong>Team:</strong> 4 Developers</p>
+                <p><strong>Language:</strong> C#</p>
+                <p><strong>Engine:</strong> Unity</p>
+                <p><strong>Duration:</strong> 6 Weeks</p>
+                <p><strong>Completion:</strong> Finished</p>
+            </div>
+
+        </section>
+
+        <!-- ⭐ OVERVIEW + CONTRIBUTIONS -->
+        <section class="project-info-section">
+
+            <div class="project-info-text">
+                <h2>Overview</h2>
+                <p>
+                    Pretend there's an overview here describing the project, its goals,
+                    gameplay, and what makes it interesting.
+                </p>
+
+                <h2>My Contributions</h2>
+                <p>
+                    Pretend there's text here explaining what you personally built,
+                    designed, programmed, or solved during the project.
+                </p>
+            </div>
+
+            <!-- ⭐ Bottom images -->
+            <div class="project-bottom-images">
+                <img src="../images/project1-extra1.png" alt="Extra Image 1">
+                <img src="../images/project1-extra2.png" alt="Extra Image 2">
+            </div>
+
+        </section>
+
     </main>
 
 </body>

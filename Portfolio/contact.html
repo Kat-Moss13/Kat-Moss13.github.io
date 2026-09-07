@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact - Kat Moss</title>
+
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/site.css" />
+
+    <script src="js/theme-toggle.js" defer></script>
+</head>
+
+<body class="light">
+
+    <header class="top-nav">
+        <div class="brand">Kat Moss</div>
+
+        <nav class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="projects/index.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-switch">
+            <div class="switch-track">
+                <div class="switch-thumb">
+                    <img src="images/sun.png" class="icon-sun" alt="Light mode" />
+                    <img src="images/moon.png" class="icon-moon" alt="Dark mode" />
+                </div>
+            </div>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- ⭐ Enhanced Page Title -->
+        <div class="contact-title-wrapper">
+            <h1 class="contact-page-title">Contact Me!</h1>
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- LEFT PANEL: CONTACT FORM -->
+            <section class="contact-form-panel">
+                <h2>Send Me a Message</h2>
+
+                <form action="https://formsubmit.co/katiemoss05@outlook.com" method="POST" class="contact-form">
+
+                    <!-- FormSubmit settings -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://kat-moss13.github.io/Portfolio/contact.html">
+
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Your name" required />
+
+                    <label>Email address</label>
+                    <input type="email" name="email" placeholder="Your email" required />
+
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="What’s this about?" required />
+
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Write your message here..." required></textarea>
+
+                    <button class="contact-send-btn">SEND</button>
+                </form>
+            </section>
+
+            <!-- RIGHT PANEL: SOCIAL LINKS (Enhanced) -->
+            <section class="contact-social-panel enhanced-social">
+                <h2>Socials</h2>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kat-moss/" target="_blank" class="social-icon linkedin">
+                        <img src="images/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                    <a href="https://github.com/Kat-Moss13" target="_blank" class="social-icon github">
+                        <img src="images/github.png" alt="GitHub" />
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
