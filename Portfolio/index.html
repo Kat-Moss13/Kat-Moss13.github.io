@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Home - Kat Moss</title>
+
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+
+    <script src="/js/theme-toggle.js" defer></script>
+    <script src="/js/carousel.js" defer></script>
+</head>
+
+<body class="light">
+
+    <header class="top-nav">
+        <div class="brand">Kat Moss</div>
+
+        <nav class="nav-right">
+            <a href="/projects/index.html">Projects</a>
+            <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-switch">
+            <div class="switch-track">
+                <div class="switch-thumb">
+                    <img src="/images/sun.png" class="icon-sun" alt="Light mode" />
+                    <img src="/images/moon.png" class="icon-moon" alt="Dark mode" />
+                </div>
+            </div>
+        </button>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-overlay">
+                <h1>Hi, I'm Kat — an AI Gameplay Programmer & Games Developer</h1>
+            </div>
+        </section>
+
+        <section class="popular-title">
+            <h2>Most Popular</h2>
+        </section>
+
+        <div class="carousel-container">
+
+            <button id="carouselPrev" class="carousel-arrow arrow-left">
+                <span class="arrow-icon">&#10094;</span>
+            </button>
+
+            <div class="carousel-viewport">
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track">
+
+                        <!-- STATIC PROJECT ITEMS -->
+                        <div class="carousel-item">
+                            <div class="carousel-image-wrapper">
+                                <img src="/images/project1.png" alt="Project One" />
+                                <a class="view-btn" href="/projects/project1.html">View Now</a>
+                            </div>
+                            <div class="project-title">Project One</div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-image-wrapper">
+                                <img src="/images/project2.jpg" alt="Project Two" />
+                                <a class="view-btn" href="/projects/project2.html">View Now</a>
+                            </div>
+                            <div class="project-title">Project Two</div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-image-wrapper">
+                                <img src="/images/project3.jpg" alt="Project Three" />
+                                <a class="view-btn" href="/projects/project3.html">View Now</a>
+                            </div>
+                            <div class="project-title">Project Three</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <button id="carouselNext" class="carousel-arrow arrow-right">
+                <span class="arrow-icon">&#10095;</span>
+            </button>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
