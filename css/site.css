@@ -469,109 +469,146 @@ body.dark .switch-thumb {
         margin-bottom: 15px;
     }
 /* ========================================= */
-/*                PROJECT PAGE               */
+/*              PROJECT PAGE                 */
 /* ========================================= */
 
-.project-wrapper {
-    padding: 40px 60px;
+.project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px, 20px, 0px, 20px;
 }
 
-/* ⭐ Video section */
-.project-video-section {
+/* Top Row */
+.project-top-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+    .back-button:hover {
+        opacity: 1;
+    }
+
+.project-page-title {
     text-align: center;
-    margin-bottom: 50px;
+    font-size: 2.6rem;
+    font-weight: 800;
 }
 
-.project-video-box {
+/* Hero Section */
+.project-hero {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.project-video-hero {
     background: var(--color-hero-overlay-bg);
     border: 1px solid var(--color-hero-overlay-border);
     backdrop-filter: blur(12px);
     padding: 20px;
     border-radius: 18px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-    max-width: 900px;
-    margin: 0 auto 20px auto;
+    width: 750px;
 }
 
-    .project-video-box video {
+    .project-video-hero iframe {
         width: 100%;
+        height: 480px;
         border-radius: 12px;
     }
 
-    .project-video-box iframe {
-        width: 100%;
-        height: 500px;
-        border-radius: 12px;
-    }
-.project-title {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--color-text);
+.project-meta-card {
+    background: var(--color-hero-overlay-bg);
+    border: 1px solid var(--color-hero-overlay-border);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 18px;
+    line-height: 30px;
+    width: 300px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    font-size: 1.2rem;
 }
 
-/* ⭐ Main image + details */
-.project-main-section {
-    display: flex;
+/* Middle Section */
+.project-middle {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 80px;
     justify-content: center;
-    gap: 60px;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
+    justify-items: center;
 }
 
-.project-main-image img {
-    width: 400px;
+.project-main-image {
+    width: 450px;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
-.project-details {
-    background: var(--color-hero-overlay-bg);
-    border: 1px solid var(--color-hero-overlay-border);
-    backdrop-filter: blur(12px);
-    padding: 30px 40px;
-    border-radius: 18px;
-    width: 300px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-}
-
-    .project-details p {
-        font-size: 1.2rem;
-        margin-bottom: 12px;
-    }
-
-/* ⭐ Overview + Contributions */
-.project-info-section {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-}
-
-.project-info-text {
-    background: var(--color-hero-overlay-bg);
-    border: 1px solid var(--color-hero-overlay-border);
-    backdrop-filter: blur(12px);
-    padding: 40px 50px;
-    border-radius: 18px;
-    width: 500px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-}
-
-    .project-info-text h2 {
-        margin-top: 0;
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-    }
-
-.project-bottom-images {
+/* Side Images */
+.project-images-left,
+.project-images-right {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-    .project-bottom-images img {
-        width: 300px;
+    .project-images-left img,
+    .project-images-right img {
+        width: 450px;
         border-radius: 12px;
         box-shadow: 0 8px 30px rgba(0,0,0,0.15);
     }
+
+/* Info Card */
+.project-info-card {
+    background: var(--color-hero-overlay-bg);
+    border: 1px solid var(--color-hero-overlay-border);
+    backdrop-filter: blur(12px);
+    padding: 40px 50px;
+    border-radius: 18px;
+    width: 700px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+    .project-info-card h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+
+.steam-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: var(--color-hero-overlay-bg);
+    border: 1px solid var(--color-hero-overlay-border);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: 0.25s ease;
+}
+
+    .steam-button:hover {
+        background: var(--color-accent);
+        color: #000;
+        border-color: var(--color-accent);
+    }
+

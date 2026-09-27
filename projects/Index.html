@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Projects - Kat Moss</title>
+
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+
+    <script src="../js/theme-toggle.js" defer></script>
+    <script src="../js/projects-filter.js" defer></script>
+</head>
+
+<body class="light">
+
+    <header class="top-nav">
+        <div class="brand">Kat Moss</div>
+
+        <nav class="nav-right">
+            <a href="../index.html">Home</a>
+            <a href="index.html" class="active">Projects</a>
+            <a href="../about.html">About</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-switch">
+            <div class="switch-track">
+                <div class="switch-thumb">
+                    <img src="../images/sun.png" class="icon-sun" alt="Light mode" />
+                    <img src="../images/moon.png" class="icon-moon" alt="Dark mode" />
+                </div>
+            </div>
+        </button>
+    </header>
+
+    <main class="projects-page">
+
+        <!-- HERO BANNER -->
+        <section class="projects-hero">
+            <h1>Projects</h1>
+            <p>Browse my game development projects — filter by engine, language, team size, and more.</p>
+        </section>
+
+        <div class="projects-layout">
+
+            <!-- FILTER SIDEBAR -->
+            <aside class="filter-sidebar">
+
+                <h2>Filters</h2>
+
+                <div class="filter-group">
+                    <label>Language</label>
+                    <select id="filter-language">
+                        <option value="">Any</option>
+                        <option value="C++">C++</option>
+                        <option value="Blueprints">Blueprints</option>
+                        <option value="C#">C#</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Team Size</label>
+                    <select id="filter-team">
+                        <option value="">Any</option>
+                        <option value="solo">Solo</option>
+                        <option value="team">Team</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Engine</label>
+                    <select id="filter-engine">
+                        <option value="">Any</option>
+                        <option value="UE5">UE5</option>
+                        <option value="Unity">Unity</option>
+                    </select>
+                </div>
+
+                <button id="clear-filters" class="clear-btn">Clear Filters</button>
+
+                <h2>Sort</h2>
+
+                <div class="filter-group">
+                    <label>Sort By</label>
+                    <select id="sort-by">
+                        <option value="default">Default Order</option>
+                        <option value="duration">Duration (Shortest → Longest)</option>
+                        <option value="recent">Most Recent</option>
+                    </select>
+                </div>
+
+            </aside>
+
+            <!-- PROJECT GRID -->
+            <section class="projects-grid" id="projectsGrid">
+
+                <!-- Pushy Plushy -->
+                <a href="PushyPlushy.html" class="project-card-link">
+                    <div class="project-card"
+                         data-language="C++/Blueprints"
+                         data-team="team"
+                         data-engine="UE5"
+                         data-duration="8"
+                         data-date="2025-05">
+
+                        <img src="../images/project1-main.png" alt="Pushy Plushy">
+                        <h3>Pushy Plushy</h3>
+                        <p>Engine: UE5 • Team</p>
+
+                    </div>
+                </a>
+
+                <!-- Witches of Starfall -->
+                <a href="WitchesOfStarfall.html" class="project-card-link">
+                    <div class="project-card"
+                         data-language="C#"
+                         data-team="team"
+                         data-engine="Unity"
+                         data-duration="208"
+                         data-date="2026-01">
+
+                        <img src="../images/project3.png" alt="Witches of Starfall">
+                        <h3>Witches of Starfall</h3>
+                        <p>Engine: Unity • Team</p>
+
+                    </div>
+                </a>
+
+                <!-- The Corner Bakery VR -->
+                <a href="TheCornerBakeryVR.html" class="project-card-link">
+                    <div class="project-card"
+                         data-language="Blueprints"
+                         data-team="solo"
+                         data-engine="UE5"
+                         data-duration="8"
+                         data-date="2025-05">
+
+                        <img src="../images/project2.png" alt="The Corner Bakery VR">
+                        <h3>The Corner Bakery VR</h3>
+                        <p>Engine: UE5 • Solo</p>
+
+                    </div>
+                </a>
+
+                <!-- Inventory Tool System -->
+                <a href="InventoryToolSystem.html" class="project-card-link">
+                    <div class="project-card"
+                         data-language="C++/Blueprints"
+                         data-team="solo"
+                         data-engine="UE5"
+                         data-duration="8"
+                         data-date="2025-02">
+
+                        <img src="../images/ITS-extra3.png" alt="Inventory Tool System">
+                        <h3>Inventory Tool System</h3>
+                        <p>Engine: UE5 • Solo</p>
+
+                    </div>
+                </a>
+
+                <!-- VFX Music Pokémon Moveset -->
+                <a href="VFXMusicPokemonMoveset.html" class="project-card-link">
+                    <div class="project-card"
+                         data-language="Blueprints"
+                         data-team="solo"
+                         data-engine="UE5"
+                         data-duration="8"
+                         data-date="2024-12">
+
+                        <img src="../images/VFX-main.gif" alt="VFX Music Pokémon Moveset">
+                        <h3>VFX Music Pokémon Moveset</h3>
+                        <p>Engine: UE5 • Solo</p>
+
+                    </div>
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
